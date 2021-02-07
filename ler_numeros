@@ -1,26 +1,26 @@
-def  leiaint():
+def leiaint():
     """Ler um numero inteiro"""
-    while True
-    n = str(input('Digite um valor inteiro: '))
-    if n.isnumeric():
-        print(f'O número digitado foi {n})
-        return n
+    while True:
+        n = str(input('Digite um valor inteiro: '))
+        if n.isnumeric():
+            print(f'O número digitado foi {n}')
+            return n
 
 
 def leiar():
     """lê um numero real aceitando ,"""
     valido = False
-    while valido = False
-    n = str(input('Digite um número real:' ).replace(',','.')
-    if n.alpha() or n == ''
-        print(f'\033[31mErro digite um número correto\033[m')
-    else:
-        valido = True
-        c = f'{n}'.replace('.',',')
-        r = print(f'O número digitado foi {c}
-        return r
-        
-        
-#programa principal
+    while valido == False:
+        n = str(input('Digite um número real:')).replace(',', '.')
+        if n.isalpha() or n == '':
+            print(f'\033[31mErro digite um número correto\033[m')
+        else:
+            valido = True
+            c = f'{n}'.replace('.', ',')
+            r = print(f'O número digitado foi {c}')
+            return r
+
+
+# programa principal
 i = leiaint()
 r = leiar()
