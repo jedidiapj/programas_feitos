@@ -22,7 +22,7 @@ def leiar():
             print('\033[31mERRO: digite um valor correto\033[m')
             continue
         else:
-            r = f'{n}'.replace('.',',')
+            r = f'{n:.2f}'.replace('.',',')
             f = print(f'O valor digitado foi {r}')
             return f
 
