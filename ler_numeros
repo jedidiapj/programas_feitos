@@ -13,9 +13,6 @@ def leiaInt():
             return n
 
 
-
-
-
 def leiar():
     """Faz o programa receber um número real aceitando ,"""
     while True:
@@ -28,9 +25,6 @@ def leiar():
             r = f'{n}'.replace('.',',')
             f = print(f'O valor digitado foi {r}')
             return f
-
-
-
 
 
 i = leiaInt()
