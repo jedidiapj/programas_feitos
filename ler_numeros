@@ -1,5 +1,37 @@
-import ler_numeros_numero
+def leiaInt():
+    while True:
+        try:
+            n = int(input('Digite um valor inteiro: '))
+        except (ValueError,TypeError):
+            print('\033[31mERRO: digite um valor correto\033[m')
+            continue
+        except (KeyboardInterrupt):
+            print('\033[31mO usuário preferiu não digitar esse número\033[m')
+            return 0
+        else:
+            print(f'o numero digitado foi {n}')
+            return n
 
-# programa principal
-i = leiaint()
+
+
+
+
+def leiar():
+    """Faz o programa receber um número real aceitando ,"""
+    while True:
+        try:
+            n = float(str(input('digite um numero real: ')).replace(',', '.'))
+        except (ValueError,TypeError):
+            print('\033[31mERRO: digite um valor correto\033[m')
+            continue
+        else:
+            r = f'{n}'.replace('.',',')
+            f = print(f'O valor digitado foi {r}')
+            return f
+
+
+
+
+
+i = leiaInt()
 r = leiar()
