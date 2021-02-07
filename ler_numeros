@@ -1,6 +1,5 @@
 import ler_numeros_numero
 
-
 # programa principal
 i = leiaint()
 r = leiar()
