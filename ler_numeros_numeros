@@ -1,0 +1,23 @@
+def leiaInt():
+    while True:
+        n = str(input('Digite um valor inteiro: '))
+        if n.isnumeric():
+            print(f'o numero digitado foi {n}')
+            return n
+        else:
+            print('\033[31merro digite um numero correto\033[m')
+            continue
+
+
+def leiar():
+    """Faz o programa receber um número real aceitando ,"""
+    valido = False
+    while valido ==  False:
+        n = str(input('Digite um valor real: ')).replace(',','.').strip()
+        if n.isalpha() or n == '' or n.isspace():
+            print('\033[31merro digite um numero correto\033[m')
+        else:
+            valido = True
+            c = f'{n}'.replace('.',',')
+            r = print(f'O valor digitado foi {c}')
+            return r
